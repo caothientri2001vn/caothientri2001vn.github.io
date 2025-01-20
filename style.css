@@ -142,6 +142,12 @@ ul {
     margin-left: 0.5em;
 }
 
+.oral {
+    color: orange;
+    text-decoration: none;
+    /* margin-left: 0.5em; */
+}
+
 .justified {
     text-align: justify;
     margin-bottom: 10px;
