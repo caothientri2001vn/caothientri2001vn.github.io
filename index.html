@@ -27,7 +27,7 @@
     <div class="portfolio-container">
         <div class="details-section">
             <h2>Biography</h2>
-            <div class="justified">Hi! I am from Vietnam. Currently, I am a first-year PhD student at the National University of Singapore (NUS), fortunate to be under the joint supervision of <a href="https://scholar.google.com/citations?user=ErEL3bgAAAAJ&hl=en&oi=ao" class="prof">Prof. Bryan Hooi</a> and <a href="https://scholar.google.com/citations?user=DNuiPHwAAAAJ&hl=en&oi=ao" class="prof">Prof. Shuicheng Yan</a>, with the sponsorship of the <a href="https://aisingapore.org/research/phd-fellowship/" class="fellowship">AI Singapore PhD Fellowship</a>.</div>
+            <div class="justified">Hi! I am from Vietnam. Currently, I am a second-year PhD student at the National University of Singapore (NUS), fortunate to be under the joint supervision of <a href="https://scholar.google.com/citations?user=ErEL3bgAAAAJ&hl=en&oi=ao" class="prof">Prof. Bryan Hooi</a> and <a href="https://scholar.google.com/citations?user=DNuiPHwAAAAJ&hl=en&oi=ao" class="prof">Prof. Shuicheng Yan</a>, with the sponsorship of the <a href="https://aisingapore.org/research/phd-fellowship/" class="fellowship">AI Singapore PhD Fellowship</a>.</div>
 
                 <!-- <div class="justified">Currently, I serve as a Research Assistant at the National University of Singapore. </div> -->
 
@@ -62,8 +62,12 @@
     <div><em>Jul 13, 2023</em></div> <div>One paper accepted at ICCV 2023.</div>
     <div><em>Nov 18, 2022</em></div> <div>One paper accepted at AAAI 2023.</div> -->
             <!-- <section> -->
-            <h2>News</h2>
-            <div style="display: grid; grid-template-columns: 150px auto; row-gap: 6px; font-family: sans-serif;">
+            <details class="news-section" open>
+                <summary>
+                    <span>News</span>
+                    <span class="news-toggle" aria-hidden="true"></span>
+                </summary>
+            <div class="news-list">
                 <div><em>Aug 2026</em></div> <div>One paper accepted at EMNLP 2026 (Main).</div>
                 <div><em>May 2026</em></div> <div>Two papers accepted at ICML 2026 (one Spotlight).</div>
                 <div><em>Mar 2026</em></div> <div>One paper accepted at ACL 2026 (Findings).</div>
@@ -86,6 +90,7 @@
                 <div><em>Nov 2022</em></div> <div>One paper accepted at AAAI 2023.</div>
                 <div><em>Sep 2022</em></div> <div>Started RA position at SMU under supervision of Prof. Guansong Pang.</div>
             </div>
+            </details>
             <!-- </section> -->
             <h2>Publications</h2>
                 <div class="publications-section">
@@ -104,10 +109,10 @@
                     </ul>
                     <ul>
                         <li class="publication">
-                            <span class="authors"><span class="underline">Tri Cao*</span>, Khoi Le*, Thong Nguyen, Cong-Duy Nguyen, Quynh Vo, Anh Tuan Luu, Chunyan Miao, See-Kiong Ng, Shuicheng Yan, Bryan Hooi.</span>
-                            <strong class="publication-title"> Tracking the Truth: Object-Centric Spatio-Temporal Monitoring for Video Large Language Models. </strong>
+                            <span class="authors">Thong Nguyen*, <span class="underline">Tri Cao*</span>, Khoi Le*, Cong-Duy Nguyen, Quynh Vo, Bryan Hooi.</span>
+                            <strong class="publication-title"> STRAND: Benchmarking and Improving Object-Centric Spatio-Temporal Monitoring in Video Large Language Models. </strong>
                             <span class="publication-details"> Under Review.</span>
-                            <a href="https://arxiv.org/abs/2605.08974" target="_blank" style="text-decoration: none;">📄</a>
+                            <a href="https://arxiv.org/abs/2609.29607" target="_blank" style="text-decoration: none;">📄</a>
                             <!-- <a href="https://github.com/caothientri2001vn/WARD-WebAgent" target="_blank" title="GitHub"> -->
                             <!-- <img src="github.png" 
                                 alt="GitHub" width="18" style="vertical-align: top;"> -->
@@ -378,7 +383,7 @@
 
                 
                 
-            </ul>
+            </div>
         </div>
     </div>
 </body>
