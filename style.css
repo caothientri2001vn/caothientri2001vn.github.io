@@ -224,13 +224,21 @@ ul {
     display: grid;
     grid-template-columns: 120px minmax(0, 1fr);
     gap: 9px 20px;
-    padding: 5px 20px 20px;
+    padding: 8px 20px 20px;
     border-top: 1px solid var(--border);
 }
 
 .news-list > div:nth-child(odd) {
     color: var(--accent-dark);
     font-weight: 600;
+}
+
+.publication-year {
+    margin: 25px 0 10px;
+    padding-bottom: 6px;
+    color: var(--accent-dark);
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .section-heading {
