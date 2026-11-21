@@ -10,7 +10,6 @@
     --text: #263244;
     --muted: #667085;
     --border: #dce5ef;
-    --publication-divider: rgba(72, 107, 155, 0.15);
 }
 
 html[data-theme="dark"] {
@@ -21,7 +20,6 @@ html[data-theme="dark"] {
     --text: #e4ebf4;
     --muted: #a8b4c4;
     --border: #34465b;
-    --publication-divider: rgba(145, 181, 226, 0.16);
 }
 
 html {
@@ -345,8 +343,7 @@ ul {
 
 .publication {
     margin-bottom: 16px;
-    padding: 0 0 16px;
-    border-bottom: 1px solid var(--publication-divider);
+    padding: 0 0 4px;
 }
 
 .publication:last-child {
