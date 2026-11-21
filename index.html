@@ -4,8 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tri Cao</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Tri Cao is a PhD student at the National University of Singapore researching trustworthy perception and interaction for AI agents, multimodal safety, and AI agent security.">
+    <link rel="canonical" href="https://caothientri2001vn.github.io/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="profile-photo.jpg">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Tri Cao | AI Researcher">
+    <meta property="og:description" content="PhD student at NUS researching trustworthy perception and interaction for AI agents.">
+    <meta property="og:url" content="https://caothientri2001vn.github.io/">
+    <meta property="og:image" content="https://caothientri2001vn.github.io/profile-photo.jpg">
+    <meta property="og:image:alt" content="Portrait of Tri Cao">
+    <meta property="profile:first_name" content="Tri">
+    <meta property="profile:last_name" content="Cao">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tri Cao | AI Researcher">
+    <meta name="twitter:description" content="PhD student at NUS researching trustworthy perception and interaction for AI agents.">
+    <meta name="twitter:image" content="https://caothientri2001vn.github.io/profile-photo.jpg">
+
+    <title>Tri Cao | AI Researcher</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Tri Cao",
+            "url": "https://caothientri2001vn.github.io/",
+            "image": "https://caothientri2001vn.github.io/profile-photo.jpg",
+            "jobTitle": "PhD Student",
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "National University of Singapore"
+            },
+            "sameAs": [
+                "https://scholar.google.com/citations?user=QytvkD4AAAAJ",
+                "https://www.linkedin.com/in/tri-cao-970b02228/"
+            ]
+        }
+    </script>
+    <script>
+        (() => {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="profile-section">
@@ -16,15 +62,37 @@
         <div class="text-profile2">
             Second-year PhD Student at National University of Singapore (NUS)
         </div>
-        <div class="icons">
-            <a href="mailto:tricao2001vn@gmail.com"><img src="email-icon.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/tri-cao-970b02228/"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="CV_TriCAO.pdf"><img src="cv-icon.png" alt="CV"></a>
-            <!-- <a href="https://scholar.google.com/citations?user=yourID"><img src="google-scholar-icon.png" alt="Google Scholar"></a> -->
-            <a href="https://scholar.google.com/citations?user=QytvkD4AAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar-icon.png" alt="Google Scholar"></a>
-
-            <!-- <a href="https://www.facebook.com/profile.php?id=100005222355805"><img src="facebook-icon.png" alt="Facebook"></a> -->
+        <div class="icons" aria-label="Profile links">
+            <a href="mailto:tricao2001vn@gmail.com" aria-label="Email" title="Email">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="m4 7 8 6 8-6"></path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/tri-cao-970b02228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <svg class="social-icon social-icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V9H7.1v11.45Z"></path>
+                </svg>
+            </a>
+            <a href="CV_TriCAO.pdf" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae" title="Curriculum Vitae">
+                <span class="cv-icon" aria-hidden="true">CV</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=QytvkD4AAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z"></path>
+                    <path d="M6 11.2v4.4c2.8 2.2 9.2 2.2 12 0v-4.4M21.5 9v6"></path>
+                </svg>
+            </a>
         </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="3.5"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"></path>
+            </svg>
+        </button>
     </div>
     <div class="portfolio-container">
         <div class="details-section">
@@ -40,8 +108,6 @@
             <section id="biography" class="content-section">
             <h2>Biography</h2>
             <div class="justified">Currently, I am a second-year PhD student at the National University of Singapore (NUS), fortunate to be under the joint supervision of <a href="https://scholar.google.com/citations?user=ErEL3bgAAAAJ&hl=en&oi=ao" class="prof">Prof. Bryan Hooi</a> and <a href="https://scholar.google.com/citations?user=DNuiPHwAAAAJ&hl=en&oi=ao" class="prof">Prof. Shuicheng Yan</a>, with the sponsorship of the <a href="https://aisingapore.org/research/phd-fellowship/" class="fellowship">AI Singapore PhD Fellowship</a>.</div>
-
-                <!-- <div class="justified">Currently, I serve as a Research Assistant at the National University of Singapore. </div> -->
 
                 <div class="justified">Previously, I earned my Bachelor's degree in Computer Science from Vietnam National University Ho Chi Minh City – University of Science, where I studied in the Advanced Program in Computer Science (APCS) and graduated with Highest Distinction.</div>
             </section>
@@ -68,7 +134,7 @@
                     <div class="news-item"><time>Jan</time><span>Two papers accepted at ICLR 2026.</span></div>
 
                     <div class="news-year">2025</div>
-                    <div class="news-item"><time>Nov</time><span>One paper accepted at WSDM 2025.</span></div>
+                    <div class="news-item"><time>Nov</time><span>One paper accepted at WSDM 2026.</span></div>
                     <div class="news-item"><time>Sep</time><span>One paper accepted at NeurIPS 2025.</span></div>
                     <div class="news-item"><time>Aug</time><span>One paper accepted at EMNLP 2025.</span></div>
                     <div class="news-item"><time>Aug</time><span>Started my PhD at NUS.</span></div>
@@ -93,7 +159,6 @@
                     <div class="news-item"><time>Sep</time><span>Started RA position at SMU under supervision of Prof. Guansong Pang.</span></div>
                 </div>
             </details>
-            <!-- </section> -->
             <h2 id="publications">Publications</h2>
                 <div class="publications-section">
                     <h2>Under Review</h2>
@@ -105,8 +170,6 @@
                             <a href="https://arxiv.org/abs/2605.15030" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/caothientri2001vn/WARD-WebAgent" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors">Thong Nguyen*, <span class="underline">Tri Cao*</span>, Khoi Le*, Cong-Duy Nguyen, Quynh Vo, Bryan Hooi.</span>
                             <strong class="publication-title"> STRAND: Benchmarking and Improving Object-Centric Spatio-Temporal Monitoring in Video Large Language Models. </strong>
@@ -115,7 +178,6 @@
                         </li>
                     </ul>
 
-                    <h2>Conference Proceedings</h2>
                     <h3 class="publication-year">2027</h3>
                     <ul>
                         <li class="publication">
@@ -135,17 +197,13 @@
                             <a href="https://aclanthology.org/2026.emnlp-main.1240/" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/TokisakiKurumi2001/w2s_ood" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors">Yibo Li, Zijie Lin, Ailin Deng, Xuan Zhang, Yufei He, Shuo Ji, <span class="underline">Tri Cao</span>, Bryan Hooi.</span>
                             <strong class="publication-title"> Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates. </strong>
-                            <span class="publication-details"> The International Conference on Machine Learning (ICML) 2026.</span> <span class="oral">(Spotlight)</span>
+                            <span class="publication-details"> The International Conference on Machine Learning (ICML) 2026.</span> <span class="publication-badge publication-badge--spotlight">Spotlight</span>
                             <a href="https://proceedings.mlr.press/v306/li26cv.html" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/liushiliushi/JitRL" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors">Yuexin Li, Wenjie Qu, Linyu Wu, Yulin Chen, Yufei He, <span class="underline">Tri Cao</span>, Bryan Hooi, Jiaheng Zhang.</span>
                             <strong class="publication-title"> AliMark: Enhancing Robustness of Sentence-Level Watermarks Against Text Paraphrasing. </strong>
@@ -153,8 +211,6 @@
                             <a href="https://proceedings.mlr.press/v306/li26ex.html" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/imethanlee/AliMark" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"><span class="underline">Tri Cao</span>, Minh-Huy Trinh, Ailin Deng, Quoc-Nam Nguyen, Khoa Duong, Ngai-Man Cheung, Bryan Hooi.</span>
                             <strong class="publication-title"> Are Anomaly Scores Telling the Whole Story? A Benchmark for Multilevel Anomaly Detection. </strong>
@@ -162,8 +218,6 @@
                             <a href="https://openaccess.thecvf.com/content/CVPR2026W/VAND/html/Cao_Are_Anomaly_Scores_Telling_the_Whole_Story_A_Benchmark_for_CVPRW_2026_paper.html" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/caothientri2001vn/MultilevelAD" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"> Yuan Sui, Yufei He, <span class="underline">Tri Cao</span>, Simeng Han, Yulin Chen, Bryan Hooi.</span>
                             <strong class="publication-title"> Meta-Reasoner: Dynamic Guidance for Optimized Inference-time Reasoning in Large Language Models. </strong>
@@ -172,8 +226,6 @@
                             <a href="https://github.com/Y-Sui/Meta-reasoner" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
 
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"><span class="underline">Tri Cao</span>, Bennett Lim, Yue Liu, Yuan Sui, Yuexin Li, Shumin Deng, Lin Lu, Nay Oo, Shuicheng YAN, Bryan Hooi.</span>
                             <strong class="publication-title"> VPI-Bench: Visual Prompt Injection Attacks for Computer-Use Agents. </strong>
@@ -182,8 +234,6 @@
                             <a href="https://github.com/cua-framework/agents" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                             
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors">Yufei He, Juncheng Liu, Yue Liu, Yibo Li, <span class="underline">Tri Cao</span>, Zhiyuan Hu, Xinxing Xu, Bryan Hooi.</span>
                             <strong class="publication-title"> EvoTest: Evolutionary Test-Time Learning for Self-Improving Agentic Systems. </strong>
@@ -192,8 +242,6 @@
                             <a href="https://github.com/yf-he/EvoTest" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                             
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"> Khang Tran, Hieu Cao, Thinh Pham, Nghiem Diep, <span class="underline">Tri Cao*</span>, Binh Nguyen*. </span>
                             <strong class="publication-title"> MELCOT: A Hybrid Learning Architecture with Marginal Preservation for Matrix-Valued Regression. </strong>
@@ -209,8 +257,6 @@
                             <span class="publication-details"> The Conference on Neural Information Processing Systems (NeurIPS) 2025.</span>
                             <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/2a02b560822d564119fe3ac3be024ac6-Abstract-Conference.html" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"> Lyucheng Wu, Mengru Wang, Ziwen Xu, <span class="underline">Tri Cao</span>, Nay Oo, Bryan Hooi, Shumin Deng.</span>
                             <strong class="publication-title"> Automating Steering for Safe Multimodal Large Language Models. </strong>
@@ -218,8 +264,6 @@
                             <a href="https://aclanthology.org/2025.emnlp-main.41/" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/zjunlp/AutoSteer" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"> Ailin Deng, <span class="underline">Tri Cao</span>, Zhirui Chen, Bryan Hooi.</span>
                             <strong class="publication-title"> Words or Vision: Do Vision-Language Models Have Blind Faith in Text? </strong>
@@ -227,20 +271,16 @@
                             <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Deng_Words_or_Vision_Do_Vision-Language_Models_Have_Blind_Faith_in_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                             <a href="https://github.com/d-ailin/blind-faith-in-text" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"> Yuexin Li, Hiok Kuek Tan, Qiaoran Meng, Mei Lin Lock, <span class="underline">Tri Cao</span>, Shumin Deng, Nay Oo, Hoon Wei Lim, Bryan Hooi.</span>
                             <strong class="publication-title"> PhishIntel: Toward Practical Deployment and Monitoring of Reference-based Phishing Detection. </strong>
                             <span class="publication-details"> The International World Wide Web Conference (WWW) 2025. </span>
                             <a href="https://doi.org/10.1145/3701716.3715192" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="publication">
                             <span class="authors"><span class="underline">Tri Cao*</span>, Chengyu Huang*, Yuexin Li*, Huilin Wang, Amy He, Nay Oo, Bryan Hooi.</span>
                             <strong class="publication-title"> PhishAgent: A Robust Multimodal Agent for Phishing Webpage Detection.</strong>
-                            <span class="publication-details"> The Conference on Artificial Intelligence (AAAI) 2025.</span> <span class="oral">(Oral Presentation)</span>
+                            <span class="publication-details"> The Conference on Artificial Intelligence (AAAI) 2025.</span> <span class="publication-badge publication-badge--oral">Oral Presentation</span>
                             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35003" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                         </li>
                     </ul>
@@ -279,43 +319,17 @@
                                 Representation Learning with Intra-Inter Contrastive Clustering.</strong>
                             <span class="publication-details"> The Conference on Artificial Intelligence (AAAI) 2023.</span>
                             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26687" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                            <!-- <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--code" aria-label="View source code on GitHub"><span>Code</span></a> -->
                         </li>
-<!--                         <li class="publication">
-                            <span class="authors"><span class="underline">Tri Cao</span>, Tuan Ngoc Vu, Huyen Thao Le, Vu Nguyen.</span>
-                            <strong class="publication-title">Ensemble approach for UI test case
-                                prioritization and selection.</strong>
-                            <span class="publication-details">The 34th International Conference on Software Engineering &
-                                Knowledge Engineering (Rank B - Core rankings).</span>
-                            <a href="https://ksiresearch.org/seke/seke22paper/paper148.pdf" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                        </li>
-                        <li class="publication">
-                            <span class="authors"><span class="underline">Tri Thien Cao</span>, Khoa Van Duong.</span>
-                            <strong class="publication-title">TypicalVietnameseFoodNet: A VietnamseseFood Image Dataset
-                                For Vietnamese Food.</strong>
-                            <span class="publication-details">. The 21st International Conference on Control, Automation and Systems,
-                                Korea (Rank B4 - Qualis ranking).</span>
-                            <a href="https://ieeexplore.ieee.org/abstract/document/9649805" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                        </li>
-                        <li class="publication">
-                            <span class="authors">Anh Linh Dang, Tuyen Quang Nguyen, <span class="underline">Tri Thien Cao</span>, Vinh Quang Dinh, Vinh Dinh Nguyen.</span>
-                            <strong class="publication-title">Tetra Pattern and Its Benefits to Improve the Performance of Car and Pedestrian Detection
-                                Under Hostile Conditions.</strong>
-                            <span class="publication-details">The 21st International Conference on Control, Automation and Systems,
-                                Korea. (Rank B4 - Qualis ranking). </span>
-                            <a href="https://ieeexplore.ieee.org/abstract/document/9649941" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                        </li> -->
-                        
-                    </ul>
-                
-                    <h2>Journal Articles</h2>
-                    <ul>
                         <li class="publication">
                             <span class="authors">Tan-Cong Nguyen, Tien-Phat Nguyen, <span class="underline">Tri Cao</span>, Thao Dao, Thi-Ngoc Ho, Tam V. Nguyen, and Minh-Triet Tran.</span>
                             <strong class="publication-title">MANet: Multi-branch attention auxiliary learning for lung nodule detection and segmentation.</strong>
                             <span class="publication-details">(Computer Methods And Programs In Biomedicine (IF: 7.027 - Q1)).</span>
                             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169260723004145" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
                         </li>
+                    </ul>
+
+                    <h3 class="publication-year">2022</h3>
+                    <ul>
                         <li class="publication">
                             <span class="authors">JieQin, [et al., including <span class="underline">Tri Cao</span> and Minh-Triet Tran]. </span>
                             <strong class="publication-title">Sketch-Based 3D Shape Retrieval in the Wild.</strong>
@@ -324,29 +338,6 @@
                         </li>
                     </ul>
 
-<!--                     <h2>Workshop</h2>
-                    <ul>
-                        <li class="publication">
-                            <span class="authors"><span class="underline">Thien Tri Cao</span>, Nhat Khang Ngo, Thanh Danh Le, Tuan Luc Huynh, Ngoc Thien Nguyen, Hai Dang
-                                Nguyen, Minh Triet Tran.</span>
-                            <strong class="publication-title">HCMUS at MediaEval 2021: Fine-tuning CLIP for Automatic News-Images Re-Matching.</strong>
-                            <span class="publication-details">MediaEval 2021 Multimedia Benchmark Workshop.</span>
-                            <a href="https://ceur-ws.org/Vol-3181/paper48.pdf" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                        </li>
-                        <li class="publication">
-                            <span class="authors">Tuan Luc Huynh, Nhat-Khang Ngo, Phu-Van Nguyen, <span class="underline">Thien Tri Cao</span>, Thanh-Danh Le, Hai-Dang
-                                Nguyen, Minh-Triet Tran. </span>
-                            <strong class="publication-title">HCMUS at MediaEval2021: Content-Based Misinformation Detection
-                                Using ContextualizedWord Embedding from BERT.</strong>
-                            <span class="publication-details">MediaEval 2021 Multimedia Benchmark
-                                Workshop. </span>
-                            <a href="https://ceur-ws.org/Vol-3181/paper76.pdf" target="_blank" rel="noopener noreferrer" class="publication-link publication-link--paper" aria-label="Open paper"><span>Paper</span></a>
-                        </li>
-                    </ul>
-                </div> -->
-
-                
-                
             </div>
 
             <footer class="site-footer">
