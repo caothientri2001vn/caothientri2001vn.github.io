@@ -338,6 +338,8 @@ ul {
 
 .publications-section ul {
     margin-left: 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
     list-style: none;
 }
 
@@ -557,10 +559,8 @@ ul {
 
 .publication-year {
     margin: 25px 0 10px;
-    padding-bottom: 6px;
     color: var(--accent-dark);
     font-size: 1.05rem;
-    border-bottom: 1px solid var(--border);
 }
 
 .site-footer {
