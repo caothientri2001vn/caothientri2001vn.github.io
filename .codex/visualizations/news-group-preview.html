@@ -1,0 +1,183 @@
+<div id="news-group-preview" class="viz-carousel viz-dotted-background" aria-label="Grouped News layout options" data-previous-label="Previous" data-next-label="Next">
+  <section class="ng-stage" data-variant="Year dividers" aria-label="News grouped with year dividers">
+    <div class="ng-window ng-window-dividers">
+      <div class="ng-title-row"><span>News</span><span class="ng-minus">−</span></div>
+      <div class="ng-content">
+        <div class="ng-year">2026</div>
+        <div class="ng-item"><time>Nov</time><span>Reached <u>1,000 citations</u> on Google Scholar.</span></div>
+        <div class="ng-item"><time>Oct</time><span>One paper accepted at WACV 2027.</span></div>
+        <div class="ng-item"><time>Aug</time><span>One paper accepted at EMNLP 2026 (Main).</span></div>
+        <div class="ng-item"><time>May</time><span>Two papers accepted at ICML 2026 (one Spotlight).</span></div>
+        <div class="ng-year">2025</div>
+        <div class="ng-item"><time>Nov</time><span>One paper accepted at WSDM 2025.</span></div>
+        <div class="ng-item"><time>Sep</time><span>One paper accepted at NeurIPS 2025.</span></div>
+        <div class="ng-item"><time>Aug</time><span>Started my PhD at NUS.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ng-stage" data-variant="Collapsible years" aria-label="News grouped into collapsible years" hidden>
+    <div class="ng-window ng-window-collapsible">
+      <div class="ng-title-row"><span>News</span><span class="ng-minus">−</span></div>
+      <div class="ng-content ng-accordions">
+        <details open>
+          <summary><span>2026</span><span>5 updates</span></summary>
+          <div class="ng-year-body">
+            <div class="ng-item"><time>Nov</time><span>Reached <u>1,000 citations</u> on Google Scholar.</span></div>
+            <div class="ng-item"><time>Oct</time><span>One paper accepted at WACV 2027.</span></div>
+            <div class="ng-item"><time>Aug</time><span>One paper accepted at EMNLP 2026 (Main).</span></div>
+            <div class="ng-item"><time>May</time><span>Two papers accepted at ICML 2026 (one Spotlight).</span></div>
+          </div>
+        </details>
+        <details>
+          <summary><span>2025</span><span>8 updates</span></summary>
+        </details>
+        <details>
+          <summary><span>2024</span><span>4 updates</span></summary>
+        </details>
+        <details>
+          <summary><span>2023</span><span>3 updates</span></summary>
+        </details>
+        <details>
+          <summary><span>2022</span><span>2 updates</span></summary>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #news-group-preview {
+      color-scheme: light dark;
+      padding: 22px;
+    }
+
+    #news-group-preview .ng-stage {
+      min-height: 470px;
+      display: grid;
+      align-items: start;
+    }
+
+    #news-group-preview .ng-stage[hidden] {
+      display: none;
+    }
+
+    #news-group-preview .ng-window {
+      width: min(100%, 690px);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid light-dark(#dce5ef, #3a4655);
+      border-radius: 14px;
+      background: light-dark(#fbfdff, #171b22);
+      color: light-dark(#263244, #e6ebf2);
+      box-shadow: 0 10px 28px light-dark(rgba(31, 48, 71, 0.08), rgba(0, 0, 0, 0.28));
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    #news-group-preview .ng-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      color: light-dark(#486b9b, #9ab8df);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    #news-group-preview .ng-minus {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      border-radius: 50%;
+      background: light-dark(#edf3fa, #263448);
+      font-weight: 400;
+    }
+
+    #news-group-preview .ng-content {
+      padding: 10px 20px 20px;
+      border-top: 1px solid light-dark(#dce5ef, #3a4655);
+    }
+
+    #news-group-preview .ng-year {
+      margin-top: 12px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid light-dark(#dce5ef, #34404f);
+      color: light-dark(#304f79, #a8c4e8);
+      font-weight: 600;
+    }
+
+    #news-group-preview .ng-item {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 12px;
+      padding: 5px 0;
+      line-height: 1.45;
+    }
+
+    #news-group-preview .ng-item time {
+      color: light-dark(#536b85, #98abc2);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    #news-group-preview u {
+      text-decoration-color: light-dark(#486b9b, #8fb0db);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    #news-group-preview .ng-accordions {
+      display: grid;
+      gap: 8px;
+      padding-top: 14px;
+    }
+
+    #news-group-preview details {
+      overflow: hidden;
+      border: 1px solid light-dark(#dce5ef, #34404f);
+      border-radius: 9px;
+      background: light-dark(#ffffff, #1d232c);
+    }
+
+    #news-group-preview summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 13px;
+      color: light-dark(#304f79, #a8c4e8);
+      font-weight: 600;
+      list-style: none;
+    }
+
+    #news-group-preview summary span:last-child {
+      color: light-dark(#667085, #98a4b3);
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    #news-group-preview .ng-year-body {
+      padding: 4px 13px 11px;
+      border-top: 1px solid light-dark(#e5ebf2, #34404f);
+    }
+
+    @media (max-width: 520px) {
+      #news-group-preview {
+        padding: 10px;
+      }
+
+      #news-group-preview .ng-stage {
+        min-height: 540px;
+      }
+
+      #news-group-preview .ng-content {
+        padding-right: 14px;
+        padding-left: 14px;
+      }
+
+      #news-group-preview .ng-item {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 8px;
+      }
+    }
+  </style>
+</div>
